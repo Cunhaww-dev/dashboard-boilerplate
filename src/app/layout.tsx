@@ -39,7 +39,7 @@ export default async function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "bg-background overscroll-none font-sns antialiased",
+          "bg-background overscroll-none font-sans antialiased",
           activeThemeValue ? `theme-${activeThemeValue}` : "",
           isScaled ? "theme-scaled" : ""
         )}
@@ -52,9 +52,9 @@ export default async function RootLayout({
           enableColorScheme
         >
           <ActiveThemeProvider initialTheme={activeThemeValue}>
-            {children}
+            <div className="theme-container h-full w-full">{children}</div>     
           </ActiveThemeProvider>
-        </ThemeProvider>{" "}
+        </ThemeProvider>
       </body>
     </html>
   );

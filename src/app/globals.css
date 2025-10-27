@@ -116,6 +116,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -515,5 +516,178 @@
     --sidebar-primary: var(--color-violet-500);
     --sidebar-primary-foreground: var(--color-violet-50);
     --sidebar-ring: var(--color-violet-900);
+
+    /* Cole isso no final do seu globals.css */
+
+    .theme-violet .theme-container,
+    .theme-violet [data-radix-popper-content-wrapper] {
+      --primary: var(--color-violet-700);
+      /* Cor principal (botões) */
+      --primary-foreground: var(--color-violet-50);
+      /* Texto em cima da cor principal */
+      /* --ring: var(--color-violet-100); (Opcional, descomente se quiser) */
+      --sidebar-primary: var(--color-violet-600);
+      /* Cor de destaque na sidebar */
+      --sidebar-primary-foreground: var(--color-violet-50);
+      /* Texto na cor de destaque da sidebar */
+      /* --sidebar-ring: var(--color-violet-400); (Opcional) */
+      --chart-1: var(--color-violet-300);
+      --chart-2: var(--color-violet-500);
+      --chart-3: var(--color-violet-600);
+      --chart-4: var(--color-violet-700);
+      --chart-5: var(--color-violet-800);
+
+      @variant dark {
+        --primary: var(--color-violet-700);
+        --primary-foreground: var(--color-violet-50);
+        /* --ring: var(--color-violet-900); */
+        --sidebar-primary: var(--color-violet-500);
+        --sidebar-primary-foreground: var(--color-violet-50);
+        /* --sidebar-ring: var(--color-violet-900); */
+      }
+    }
   }
 }
+
+/* ========================================
+  DEFINIÇÕES DE PALETA DE CORES (FALTANTES)
+========================================
+*/
+:root {
+  /* Paleta Blue */
+  --color-blue-50: oklch(0.9785 0.021 240.38);
+  --color-blue-100: oklch(0.9572 0.041 240.24);
+  --color-blue-200: oklch(0.9152 0.079 239.99);
+  --color-blue-300: oklch(0.8702 0.114 239.75);
+  --color-blue-400: oklch(0.8203 0.146 239.54);
+  --color-blue-500: oklch(0.7629 0.174 239.38);
+  --color-blue-600: oklch(0.6938 0.196 239.34);
+  --color-blue-700: oklch(0.6094 0.208 239.46);
+  --color-blue-800: oklch(0.5218 0.209 239.69);
+  --color-blue-900: oklch(0.4357 0.201 239.98);
+  --color-blue-950: oklch(0.3541 0.186 240.28);
+
+  /* Paleta Green */
+  --color-green-50: oklch(0.9841 0.022 144.9);
+  --color-green-100: oklch(0.9678 0.044 144.75);
+  --color-green-200: oklch(0.9358 0.086 144.47);
+  --color-green-300: oklch(0.8996 0.123 144.2);
+  --color-green-400: oklch(0.8576 0.157 143.95);
+  --color-green-500: oklch(0.8066 0.184 143.73);
+  --color-green-600: oklch(0.7417 0.201 143.6);
+  --color-green-700: oklch(0.6609 0.205 143.61);
+  --color-green-800: oklch(0.5752 0.196 143.72);
+  --color-green-900: oklch(0.4901 0.178 143.9);
+  --color-green-950: oklch(0.4093 0.155 144.11);
+
+  /* Paleta Amber (Amarelo/Laranja) */
+  --color-amber-50: oklch(0.9912 0.019 99.41);
+  --color-amber-100: oklch(0.9818 0.038 99.35);
+  --color-amber-200: oklch(0.9631 0.073 99.21);
+  --color-amber-300: oklch(0.9392 0.106 99.09);
+  --color-amber-400: oklch(0.9079 0.136 98.99);
+  --color-amber-500: oklch(0.8665 0.159 98.92);
+  --color-amber-600: oklch(0.808 0.172 98.93);
+  --color-amber-700: oklch(0.7323 0.17 99.04);
+  --color-amber-800: oklch(0.6558 0.158 99.18);
+  --color-amber-900: oklch(0.5815 0.139 99.34);
+  --color-amber-950: oklch(0.5113 0.117 99.49);
+
+  /* Paletas Mono e Default (que também faltavam) */
+  --color-stone-50: oklch(0.9846 0.007 270);
+  --color-stone-100: oklch(0.9688 0.014 270);
+  --color-stone-200: oklch(0.9381 0.027 270);
+  --color-stone-300: oklch(0.9026 0.038 270);
+  --color-stone-400: oklch(0.8609 0.048 270);
+  --color-stone-500: oklch(0.8093 0.056 270);
+  --color-stone-600: oklch(0.7431 0.061 270);
+  --color-stone-700: oklch(0.6611 0.062 270);
+  --color-stone-800: oklch(0.574 0.059 270);
+  --color-stone-900: oklch(0.4878 0.053 270);
+  --color-stone-950: oklch(0.4062 0.046 270);
+
+  /* Paleta Violet */
+  --color-violet-50: oklch(0.9785 0.033 283.03);
+  --color-violet-100: oklch(0.9575 0.065 282.88);
+  --color-violet-200: oklch(0.9168 0.125 282.59);
+  --color-violet-300: oklch(0.8732 0.177 282.26);
+  --color-violet-400: oklch(0.8248 0.222 281.9);
+  --color-violet-500: oklch(0.77 0.26 281.52);
+  --color-violet-600: oklch(0.6997 0.28 281.25);
+  --color-violet-700: oklch(0.618 0.282 281.2);
+  --color-violet-800: oklch(0.5332 0.271 281.39);
+  --color-violet-900: oklch(0.4497 0.248 281.76);
+  --color-violet-950: oklch(0.3681 0.218 282.25);
+}
+
+.dark {
+  /* Paleta Blue */
+  --color-blue-50: oklch(0.3541 0.186 240.28);
+  --color-blue-100: oklch(0.4357 0.201 239.98);
+  --color-blue-200: oklch(0.5218 0.209 239.69);
+  --color-blue-300: oklch(0.6094 0.208 239.46);
+  --color-blue-400: oklch(0.6938 0.196 239.34);
+  --color-blue-500: oklch(0.7629 0.174 239.38);
+  --color-blue-600: oklch(0.8203 0.146 239.54);
+  --color-blue-700: oklch(0.8702 0.114 239.75);
+  --color-blue-800: oklch(0.9152 0.079 239.99);
+  --color-blue-900: oklch(0.9572 0.041 240.24);
+  --color-blue-950: oklch(0.9785 0.021 240.38);
+
+  /* Paleta Green */
+  --color-green-50: oklch(0.4093 0.155 144.11);
+  --color-green-100: oklch(0.4901 0.178 143.9);
+  --color-green-200: oklch(0.5752 0.196 143.72);
+  --color-green-300: oklch(0.6609 0.205 143.61);
+  --color-green-400: oklch(0.7417 0.201 143.6);
+  --color-green-500: oklch(0.8066 0.184 143.73);
+  --color-green-600: oklch(0.8576 0.157 143.95);
+  --color-green-700: oklch(0.8996 0.123 144.2);
+  --color-green-800: oklch(0.9358 0.086 144.47);
+  --color-green-900: oklch(0.9678 0.044 144.75);
+  --color-green-950: oklch(0.9841 0.022 144.9);
+
+  /* Paleta Amber */
+  --color-amber-50: oklch(0.5113 0.117 99.49);
+  --color-amber-100: oklch(0.5815 0.139 99.34);
+  --color-amber-200: oklch(0.6558 0.158 99.18);
+  --color-amber-300: oklch(0.7323 0.17 99.04);
+  --color-amber-400: oklch(0.808 0.172 98.93);
+  --color-amber-500: oklch(0.8665 0.159 98.92);
+  --color-amber-600: oklch(0.9079 0.136 98.99);
+  --color-amber-700: oklch(0.9392 0.106 99.09);
+  --color-amber-800: oklch(0.9631 0.073 99.21);
+  --color-amber-900: oklch(0.9818 0.038 99.35);
+  --color-amber-950: oklch(0.9912 0.019 99.41);
+
+  /* Paletas Mono e Default (que também faltavam) */
+  --color-stone-50: oklch(0.4062 0.046 270);
+  --color-stone-100: oklch(0.4878 0.053 270);
+  --color-stone-200: oklch(0.574 0.059 270);
+  --color-stone-300: oklch(0.6611 0.062 270);
+  --color-stone-400: oklch(0.7431 0.061 270);
+  --color-stone-500: oklch(0.8093 0.056 270);
+  --color-stone-600: oklch(0.8609 0.048 270);
+  --color-stone-700: oklch(0.9026 0.038 270);
+  --color-stone-800: oklch(0.9381 0.027 270);
+  --color-stone-900: oklch(0.9688 0.014 270);
+  --color-stone-950: oklch(0.9846 0.007 270);
+
+  /* Paleta Violet */
+  --color-violet-50: oklch(0.3681 0.218 282.25);
+  --color-violet-100: oklch(0.4497 0.248 281.76);
+  --color-violet-200: oklch(0.5332 0.271 281.39);
+  --color-violet-300: oklch(0.618 0.282 281.2);
+  --color-violet-400: oklch(0.6997 0.28 281.25);
+  --color-violet-500: oklch(0.77 0.26 281.52);
+  --color-violet-600: oklch(0.8248 0.222 281.9);
+  --color-violet-700: oklch(0.8732 0.177 282.26);
+  --color-violet-800: oklch(0.9168 0.125 282.59);
+  --color-violet-900: oklch(0.9575 0.065 282.88);
+  --color-violet-950: oklch(0.9785 0.033 283.03);
+}
+
+/* ========================================
+  FIM DAS DEFINIÇÕES FALTANTES
+========================================
+*/
