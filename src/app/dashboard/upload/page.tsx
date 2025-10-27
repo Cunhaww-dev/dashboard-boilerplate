@@ -1,7 +1,9 @@
+import PageTitle from "@/components/shared/typography/page-title";
+
 export default function Upload() {
   return (
     <>
-      <h1>Upload View</h1>
+      <PageTitle title="Upload" subtitle="Faça aqui o upload das imagens" />
     </>
   );
 }
