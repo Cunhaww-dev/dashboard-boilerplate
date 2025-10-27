@@ -73,7 +73,7 @@ export function ActiveThemeProvider({
   return (
     // 3. Passamos a nossa nova função 'setActiveTheme' para o provider
     <ThemeContext.Provider value={{ activeTheme, setActiveTheme }}>
-            {children}   {" "}
+      {children}
     </ThemeContext.Provider>
   );
 }
