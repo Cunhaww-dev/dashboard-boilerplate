@@ -6,7 +6,7 @@ import {
   useContext,
   useEffect,
   useState,
-  useCallback, // Vamos usar o useCallback
+  useCallback,
 } from "react";
 
 const DEFAULT_THEME = "blue";
@@ -34,13 +34,12 @@ export function ActiveThemeProvider({
   children: ReactNode;
   initialTheme?: string;
 }) {
-  // 1. Renomeamos o setter original do useState
+  // 1. o setter do useState
   const [activeTheme, _setActiveTheme] = useState<string>(
     () => initialTheme || DEFAULT_THEME
   );
 
-  // 2. Criamos nossa nova função 'setActiveTheme'
-  //    que será passada para o contexto.
+  // 2. Função 'setActiveTheme' que será passada para o context.
   const setActiveTheme = useCallback((theme: string) => {
     // Atualiza o estado do React
     _setActiveTheme(theme);
@@ -49,7 +48,7 @@ export function ActiveThemeProvider({
   }, []); // O useCallback garante que a função não seja recriada
 
   useEffect(() => {
-    // Esta lógica para atualizar o <body> continua perfeita.
+    // Lógica para atualizar o <body>.
     const themeClassesToRemove = Array.from(document.body.classList).filter(
       (className) =>
         className.startsWith("theme-") &&
@@ -71,7 +70,7 @@ export function ActiveThemeProvider({
   }, [activeTheme]); // Este efeito ainda roda quando 'activeTheme' muda
 
   return (
-    // 3. Passamos a nossa nova função 'setActiveTheme' para o provider
+    // 3. Passando a nossa função 'setActiveTheme' para o provider
     <ThemeContext.Provider value={{ activeTheme, setActiveTheme }}>
       {children}
     </ThemeContext.Provider>

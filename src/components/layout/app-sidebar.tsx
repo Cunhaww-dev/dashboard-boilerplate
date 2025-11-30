@@ -2,9 +2,6 @@
 
 import * as React from "react";
 import {
-  BookOpen,
-  Bot,
-  Command,
   Frame,
   LifeBuoy,
   Map,
@@ -12,7 +9,7 @@ import {
   ScrollText,
   Send,
   Settings2,
-  SquareTerminal,
+  SquareTerminal
 } from "lucide-react";
 
 import { NavMain } from "@/components/layout/nav-main";
@@ -32,8 +29,8 @@ import { NavSingle } from "./nav-single";
 
 const data = {
   user: {
-    name: "shadcn",
-    email: "m@example.com",
+    name: "Lucas Fabri",
+    email: "fabrimail@example.com",
     avatar: "/avatars/shadcn.jpg",
   },
   navMain: [
@@ -44,12 +41,12 @@ const data = {
       isActive: true,
       items: [
         {
-          title: "Introdução",
+          title: "Dashboard",
           url: "/dashboard",
         },
         {
-          title: "Upload",
-          url: "/dashboard/upload",
+          title: "Usage Exemple",
+          url: "/dashboard/usageExemple",
         },
       ],
     },
@@ -57,43 +54,43 @@ const data = {
   navSingle: [
     {
       title: "Configurações",
-      url: "/settings",
+      url: "#",
       icon: Settings2,
     },
     {
       title: "Ajuda",
-      url: "/help",
+      url: "#",
       icon: LifeBuoy,
     },
   ],
   navSecondary: [
-    // {
-    //   title: "Support",
-    //   url: "#",
-    //   icon: LifeBuoy,
-    // },
-    // {
-    //   title: "Feedback",
-    //   url: "#",
-    //   icon: Send,
-    // },
+    {
+      title: "Support",
+      url: "#",
+      icon: LifeBuoy,
+    },
+    {
+      title: "Feedback",
+      url: "#",
+      icon: Send,
+    },
   ],
   projects: [
-    // {
-    //   name: "Design Engineering",
-    //   url: "#",
-    //   icon: Frame,
-    // },
-    // {
-    //   name: "Sales & Marketing",
-    //   url: "#",
-    //   icon: PieChart,
-    // },
-    // {
-    //   name: "Travel",
-    //   url: "#",
-    //   icon: Map,
-    // },
+    {
+      name: "Design Engineering",
+      url: "#",
+      icon: Frame,
+    },
+    {
+      name: "Sales & Marketing",
+      url: "#",
+      icon: PieChart,
+    },
+    {
+      name: "Travel",
+      url: "#",
+      icon: Map,
+    },
   ],
 };
 
@@ -109,8 +106,8 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                   <ScrollText className="size-4" />
                 </div>
                 <div className="grid flex-1 text-left text-sm leading-tight">
-                  <span className="truncate font-medium">Attendence List</span>
-                  <span className="truncate text-xs">Software</span>
+                  <span className="truncate font-medium">Boiler plate</span>
+                  <span className="truncate text-xs">Next 16</span>
                 </div>
               </a>
             </SidebarMenuButton>
@@ -120,10 +117,12 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarContent>
         <NavMain items={data.navMain} />
         <NavSingle title="Outros" items={data.navSingle} />
-        {/* <NavProjects projects={data.projects} /> */}
-        {/* <NavSecondary items={data.navSecondary} className="mt-auto" /> */}
+        <NavProjects projects={data.projects} />
+        <NavSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>
-      <SidebarFooter>{/* <NavUser user={data.user} /> */}</SidebarFooter>
+      <SidebarFooter>
+        <NavUser user={data.user} />
+      </SidebarFooter>
     </Sidebar>
   );
 }

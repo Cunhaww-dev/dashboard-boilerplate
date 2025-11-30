@@ -32,6 +32,14 @@ const DEFAULT_THEMES = [
     name: "Violet",
     value: "violet",
   },
+  {
+    name: "Red",
+    value: "red",
+  },
+  {
+    name: "Stone",
+    value: "stone",
+  },
 ];
 
 export function ThemeSelector() {
@@ -56,30 +64,12 @@ export function ThemeSelector() {
         </SelectTrigger>
         <SelectContent align="end">
           <SelectGroup>
-            {/* <SelectLabel>Default</SelectLabel> */}
             {DEFAULT_THEMES.map((theme) => (
               <SelectItem key={theme.name} value={theme.value}>
                 {theme.name}
               </SelectItem>
             ))}
           </SelectGroup>
-          {/* <SelectSeparator />
-          <SelectGroup>
-            <SelectLabel>Scaled</SelectLabel>
-            {SCALED_THEMES.map((theme) => (
-              <SelectItem key={theme.name} value={theme.value}>
-                {theme.name}
-              </SelectItem>
-            ))}
-          </SelectGroup> */}
-          {/* <SelectGroup>
-            <SelectLabel>Monospaced</SelectLabel>
-            {MONO_THEMES.map((theme) => (
-              <SelectItem key={theme.name} value={theme.value}>
-                {theme.name}
-              </SelectItem>
-            ))}
-          </SelectGroup> */}
         </SelectContent>
       </Select>
     </div>

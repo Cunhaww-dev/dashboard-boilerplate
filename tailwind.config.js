@@ -11,12 +11,12 @@ module.exports = {
       colors: {
         primary: {
           DEFAULT: "#0D1B2A",
-          foreground: "#FFFFFF",
+          foreground: "#F1F1F1",
         },
-        background: "#FFFFFF",
+        background: "#F1F1F1",
         accent: "#1B263B",
       },
     },
   },
   plugins: [],
-}
+};

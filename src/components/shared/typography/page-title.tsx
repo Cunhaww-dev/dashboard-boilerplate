@@ -12,7 +12,7 @@ export default function PageTitle({
 }: PageTitleProps) {
   return (
     <>
-      <div className={cn("mb-8", className)}>
+      <div className={cn("mb-8, space-y-2", className)}>
         <h1 className="text-2xl font-semibold">{title}</h1>
         {subtitle && (
           <p className="text-sm text-muted-foreground mt-1">{subtitle}</p>

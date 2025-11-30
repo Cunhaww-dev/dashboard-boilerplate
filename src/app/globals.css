@@ -78,6 +78,7 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
+
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
@@ -283,49 +284,49 @@
 
 .theme-blue .theme-container,
 .theme-blue [data-radix-popper-content-wrapper] {
-  --primary: var(--color-blue-700);
+  --primary: var(--color-blue-600);
   --primary-foreground: var(--color-blue-50);
-  /* --ring: var(--color-blue-100); */
-  --sidebar-primary: var(--color-blue-600);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  /* --sidebar-ring: var(--color-blue-400); */
+  --ring: var(--color-blue-400);
   --chart-1: var(--color-blue-300);
   --chart-2: var(--color-blue-500);
   --chart-3: var(--color-blue-600);
   --chart-4: var(--color-blue-700);
   --chart-5: var(--color-blue-800);
+  --sidebar-primary: var(--color-blue-600);
+  --sidebar-primary-foreground: var(--color-blue-50);
+  --sidebar-ring: var(--color-blue-400);
 
   @variant dark {
-    --primary: var(--color-blue-700);
+    --primary: var(--color-blue-600);
     --primary-foreground: var(--color-blue-50);
-    /* --ring: var(--color-blue-900); */
+    --ring: var(--color-blue-900);
     --sidebar-primary: var(--color-blue-500);
     --sidebar-primary-foreground: var(--color-blue-50);
-    /* --sidebar-ring: var(--color-blue-900); */
+    --sidebar-ring: var(--color-blue-900);
   }
 }
 
 .theme-green .theme-container,
 .theme-green [data-radix-popper-content-wrapper] {
-  --primary: var(--color-lime-600);
-  --primary-foreground: var(--color-lime-50);
-  --ring: var(--color-lime-400);
+  --primary: var(--color-green-600);
+  --primary-foreground: var(--color-green-50);
+  --ring: var(--color-green-400);
   --chart-1: var(--color-green-300);
   --chart-2: var(--color-green-500);
   --chart-3: var(--color-green-600);
   --chart-4: var(--color-green-700);
   --chart-5: var(--color-green-800);
-  --sidebar-primary: var(--color-lime-600);
-  --sidebar-primary-foreground: var(--color-lime-50);
-  --sidebar-ring: var(--color-lime-400);
+  --sidebar-primary: var(--color-green-600);
+  --sidebar-primary-foreground: var(--color-green-50);
+  --sidebar-ring: var(--color-green-400);
 
   @variant dark {
-    --primary: var(--color-lime-600);
-    --primary-foreground: var(--color-lime-50);
-    --ring: var(--color-lime-900);
-    --sidebar-primary: var(--color-lime-500);
-    --sidebar-primary-foreground: var(--color-lime-50);
-    --sidebar-ring: var(--color-lime-900);
+    --primary: var(--color-green-600);
+    --primary-foreground: var(--color-green-50);
+    --ring: var(--color-green-900);
+    --sidebar-primary: var(--color-green-500);
+    --sidebar-primary-foreground: var(--color-green-50);
+    --sidebar-ring: var(--color-green-900);
   }
 }
 
@@ -353,100 +354,6 @@
   }
 }
 
-.theme-rose .theme-container,
-.theme-rose [data-radix-popper-content-wrapper] {
-  --primary: var(--color-rose-600);
-  --primary-foreground: var(--color-rose-50);
-  --ring: var(--color-rose-400);
-  --chart-1: var(--color-rose-300);
-  --chart-2: var(--color-rose-500);
-  --chart-3: var(--color-rose-600);
-  --chart-4: var(--color-rose-700);
-  --chart-5: var(--color-rose-800);
-  --sidebar-primary: var(--color-rose-600);
-  --sidebar-primary-foreground: var(--color-rose-50);
-  --sidebar-ring: var(--color-rose-400);
-
-  @variant dark {
-    --primary: var(--color-rose-500);
-    --primary-foreground: var(--color-rose-50);
-    --ring: var(--color-rose-900);
-    --sidebar-primary: var(--color-rose-500);
-    --sidebar-primary-foreground: var(--color-rose-50);
-    --sidebar-ring: var(--color-rose-900);
-  }
-}
-
-.theme-purple .theme-container,
-.theme-purple [data-radix-popper-content-wrapper] {
-  --primary: var(--color-purple-600);
-  --primary-foreground: var(--color-purple-50);
-  --ring: var(--color-purple-400);
-  --chart-1: var(--color-purple-300);
-  --chart-2: var(--color-purple-500);
-  --chart-3: var(--color-purple-600);
-  --chart-4: var(--color-purple-700);
-  --chart-5: var(--color-purple-800);
-  --sidebar-primary: var(--color-purple-600);
-  --sidebar-primary-foreground: var(--color-purple-50);
-  --sidebar-ring: var(--color-purple-400);
-
-  @variant dark {
-    --primary: var(--color-purple-500);
-    --primary-foreground: var(--color-purple-50);
-    --ring: var(--color-purple-900);
-    --sidebar-primary: var(--color-purple-500);
-    --sidebar-primary-foreground: var(--color-purple-50);
-    --sidebar-ring: var(--color-purple-900);
-  }
-}
-
-.theme-orange .theme-container,
-.theme-orange [data-radix-popper-content-wrapper] {
-  --primary: var(--color-orange-600);
-  --primary-foreground: var(--color-orange-50);
-  --ring: var(--color-orange-400);
-  --chart-1: var(--color-orange-300);
-  --chart-2: var(--color-orange-500);
-  --chart-3: var(--color-orange-600);
-  --chart-4: var(--color-orange-700);
-  --chart-5: var(--color-orange-800);
-  --sidebar-primary: var(--color-orange-600);
-  --sidebar-primary-foreground: var(--color-orange-50);
-  --sidebar-ring: var(--color-orange-400);
-
-  @variant dark {
-    --primary: var(--color-orange-500);
-    --primary-foreground: var(--color-orange-50);
-    --ring: var(--color-orange-900);
-    --sidebar-primary: var(--color-orange-500);
-    --sidebar-primary-foreground: var(--color-orange-50);
-    --sidebar-ring: var(--color-orange-900);
-  }
-}
-
-.theme-teal .theme-container,
-.theme-teal [data-radix-popper-content-wrapper] {
-  --primary: var(--color-teal-600);
-  --primary-foreground: var(--color-teal-50);
-  --chart-1: var(--color-teal-300);
-  --chart-2: var(--color-teal-500);
-  --chart-3: var(--color-teal-600);
-  --chart-4: var(--color-teal-700);
-  --chart-5: var(--color-teal-800);
-  --sidebar-primary: var(--color-teal-600);
-  --sidebar-primary-foreground: var(--color-teal-50);
-  --sidebar-ring: var(--color-teal-400);
-
-  @variant dark {
-    --primary: var(--color-teal-500);
-    --primary-foreground: var(--color-teal-50);
-    --sidebar-primary: var(--color-teal-500);
-    --sidebar-primary-foreground: var(--color-teal-50);
-    --sidebar-ring: var(--color-teal-900);
-  }
-}
-
 .theme-red .theme-container,
 .theme-red [data-radix-popper-content-wrapper] {
   --primary: var(--color-red-600);
@@ -471,30 +378,6 @@
   }
 }
 
-.theme-yellow .theme-container,
-.theme-yellow [data-radix-popper-content-wrapper] {
-  --primary: var(--color-yellow-400);
-  --primary-foreground: var(--color-yellow-900);
-  --ring: var(--color-yellow-400);
-  --chart-1: var(--color-yellow-300);
-  --chart-2: var(--color-yellow-500);
-  --chart-3: var(--color-yellow-600);
-  --chart-4: var(--color-yellow-700);
-  --chart-5: var(--color-yellow-800);
-  --sidebar-primary: var(--color-yellow-600);
-  --sidebar-primary-foreground: var(--color-yellow-50);
-  --sidebar-ring: var(--color-yellow-400);
-
-  @variant dark {
-    --primary: var(--color-yellow-500);
-    --primary-foreground: var(--color-yellow-900);
-    --ring: var(--color-yellow-900);
-    --sidebar-primary: var(--color-yellow-500);
-    --sidebar-primary-foreground: var(--color-yellow-50);
-    --sidebar-ring: var(--color-yellow-900);
-  }
-}
-
 .theme-violet .theme-container,
 .theme-violet [data-radix-popper-content-wrapper] {
   --primary: var(--color-violet-600);
@@ -516,41 +399,36 @@
     --sidebar-primary: var(--color-violet-500);
     --sidebar-primary-foreground: var(--color-violet-50);
     --sidebar-ring: var(--color-violet-900);
-
-    /* Cole isso no final do seu globals.css */
-
-    .theme-violet .theme-container,
-    .theme-violet [data-radix-popper-content-wrapper] {
-      --primary: var(--color-violet-700);
-      /* Cor principal (botões) */
-      --primary-foreground: var(--color-violet-50);
-      /* Texto em cima da cor principal */
-      /* --ring: var(--color-violet-100); (Opcional, descomente se quiser) */
-      --sidebar-primary: var(--color-violet-600);
-      /* Cor de destaque na sidebar */
-      --sidebar-primary-foreground: var(--color-violet-50);
-      /* Texto na cor de destaque da sidebar */
-      /* --sidebar-ring: var(--color-violet-400); (Opcional) */
-      --chart-1: var(--color-violet-300);
-      --chart-2: var(--color-violet-500);
-      --chart-3: var(--color-violet-600);
-      --chart-4: var(--color-violet-700);
-      --chart-5: var(--color-violet-800);
-
-      @variant dark {
-        --primary: var(--color-violet-700);
-        --primary-foreground: var(--color-violet-50);
-        /* --ring: var(--color-violet-900); */
-        --sidebar-primary: var(--color-violet-500);
-        --sidebar-primary-foreground: var(--color-violet-50);
-        /* --sidebar-ring: var(--color-violet-900); */
-      }
-    }
   }
 }
 
+.theme-stone .theme-container,
+.theme-stone [data-radix-popper-content-wrapper] {
+  --primary: var(--color-stone-600);
+  --primary-foreground: var(--color-stone-50);
+  --ring: var(--color-stone-400);
+  --chart-1: var(--color-stone-300);
+  --chart-2: var(--color-stone-500);
+  --chart-3: var(--color-stone-600);
+  --chart-4: var(--color-stone-700);
+  --chart-5: var(--color-stone-800);
+  --sidebar-primary: var(--color-stone-600);
+  --sidebar-primary-foreground: var(--color-stone-50);
+  --sidebar-ring: var(--color-stone-400);
+
+  @variant dark {
+    --primary: var(--color-stone-500);
+    --primary-foreground: var(--color-stone-50);
+    --ring: var(--color-stone-900);
+    --sidebar-primary: var(--color-stone-500);
+    --sidebar-primary-foreground: var(--color-stone-50);
+    --sidebar-ring: var(--color-stone-900);
+  }
+}
+
+
 /* ========================================
-  DEFINIÇÕES DE PALETA DE CORES (FALTANTES)
+  DEFINIÇÕES DE PALETA DE CORES (ADICIONE NOVAS CORES AQUI)
 ========================================
 */
 :root {
@@ -593,7 +471,7 @@
   --color-amber-900: oklch(0.5815 0.139 99.34);
   --color-amber-950: oklch(0.5113 0.117 99.49);
 
-  /* Paletas Mono e Default (que também faltavam) */
+  /* Paletas stone */
   --color-stone-50: oklch(0.9846 0.007 270);
   --color-stone-100: oklch(0.9688 0.014 270);
   --color-stone-200: oklch(0.9381 0.027 270);
@@ -618,6 +496,18 @@
   --color-violet-800: oklch(0.5332 0.271 281.39);
   --color-violet-900: oklch(0.4497 0.248 281.76);
   --color-violet-950: oklch(0.3681 0.218 282.25);
+
+  /* Paleta Red */
+  --color-red-50: oklch(0.98 0.04 30);   
+  --color-red-100: oklch(87.097% 0.06898 18.49);
+  --color-red-200: oklch(74.61% 0.15371 21.417);
+  --color-red-300: oklch(61.294% 0.25154 29.223);
+  --color-red-400: oklch(57.698% 0.23678 29.223);
+  --color-red-500: oklch(52.293% 0.2146 29.223);
+  --color-red-600: oklch(46.342% 0.19018 29.223);
+  --color-red-700: oklch(39.984% 0.16408 29.223);
+  --color-red-800: oklch(32.483% 0.1333 29.223);
+  --color-red-900: oklch(24.751% 0.10157 29.223);
 }
 
 .dark {
@@ -685,9 +575,16 @@
   --color-violet-800: oklch(0.9168 0.125 282.59);
   --color-violet-900: oklch(0.9575 0.065 282.88);
   --color-violet-950: oklch(0.9785 0.033 283.03);
-}
 
-/* ========================================
-  FIM DAS DEFINIÇÕES FALTANTES
-========================================
-*/
+  /* Paleta red */
+  --color-red-50: oklch(24.751% 0.10157 29.223);
+  --color-red-100: oklch(39.355% 0.1615 29.223);
+  --color-red-200: oklch(45.737% 0.18769 29.223);
+  --color-red-300: oklch(45.737% 0.18769 29.223);
+  --color-red-400: oklch(51.706% 0.21219 29.223);
+  --color-red-500: oklch(56.551% 0.23207 29.223);
+  --color-red-600: oklch(60.165% 0.2469 29.223);
+  --color-red-700: oklch(74.725% 0.13789 20.857);
+  --color-red-800: oklch(85.257% 0.073 18.621);
+  --color-red-900: oklch(93.65% 0.03199 17.556);
+}
